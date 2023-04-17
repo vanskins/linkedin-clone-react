@@ -4,13 +4,13 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCKtVg8IkR9NFLFgg8-PXN45GtOQ0btiZQ",
-  authDomain: "linkedin-clone-e7bdb.firebaseapp.com",
-  projectId: "linkedin-clone-e7bdb",
-  storageBucket: "linkedin-clone-e7bdb.appspot.com",
-  messagingSenderId: "632401412235",
-  appId: "1:632401412235:web:cb1a3f761bbbc98edb548e"
+export const firebaseConfig = {
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECTID,
+  storageBucket: process.env.STORAGEBUCKET,
+  messagingSenderId: process.env.MSGSENDERID,
+  appId: process.env.APPID
 };
 
 // Initialize Firebase
